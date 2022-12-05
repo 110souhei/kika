@@ -1,0 +1,13 @@
+struct XY{
+    ll x,y;
+};
+
+XY a,b;
+XY c,d;
+        
+        ll s = (a.x - b.x) * (c.y - a.y) - (a.y - b.y) * (c.x - a.x);
+        ll t = (a.x - b.x) * (d.y - a.y) - (a.y - b.y) * (d.x - a.x);
+        if (s * t > 0) continue;
+
+        s = (c.x - d.x) * (a.y - c.y) - (c.y - d.y) * (a.x - c.x);
+        t = (c.x - d.x) * (b.y - c.y) - (c.y - d.y) * (b.x - c.x);
